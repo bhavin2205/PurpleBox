@@ -1,0 +1,14 @@
+{
+  "T1059.001": {
+    "name": "PowerShell",
+    "category": "Execution",
+    "script": "attacks/T1059_powershell.ps1",
+    "detection": "detections/detect_T1059.py"
+  },
+  "T1082": {
+    "name": "System Information Discovery",
+    "category": "Discovery",
+    "script": "attacks/T1082_discovery.ps1",
+    "detection": "detections/detect_T1082.py"
+  }
+}
