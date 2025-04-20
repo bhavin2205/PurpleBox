@@ -1,0 +1,11 @@
+
+[*] Running PowerShell Simulation (T1082)...
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+
+[!] Errors:
+The argument 'attacks/T1082_discovery.ps1' to the -File parameter does not exist. Provide the path to an existing '.ps1' file as an argument to the -File parameter.
+

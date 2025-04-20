@@ -1,0 +1,4 @@
+
+[*] Running Detection Script (T1082)...
+[X] No T1082 behavior detected.
+

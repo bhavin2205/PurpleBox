@@ -1,0 +1,4 @@
+{
+  "techniques": ["T1059.001", "T1082"],
+  "auto_report": true
+}
