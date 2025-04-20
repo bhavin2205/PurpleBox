@@ -1,0 +1,23 @@
+Running system discovery technique (T1082)
+
+
+[*] Running Detection Script (T1082)...
+[MATCH] Found Get-ComputerInfo execution (T1082)
+<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-PowerShell' Guid='{a0c1853b-5c40-4b15-8766-3cf1c58f985a}'/><EventID>4104</EventID><Version>1</Version><Level>5</Level><Task>2</Task><Opcode>15</Opcode><Keywords>0x0</Keywords><TimeCreated SystemTime='2025-04-20T20:13:33.7520798Z'/><EventRecordID>1499</EventRecordID><Correlation ActivityID='{cd422042-b21d-0001-4701-43cd1db2db01}'/><Execution ProcessID='8640' ThreadID='4984'/><Channel>Microsoft-Windows-PowerShell/Operational</Channel><Computer>DESKTOP-AIJFHRO</Computer><Security UserID='S-1-5-21-3792401364-173843540-2363564901-1001'/></System><EventData><Data Name='MessageNumber'>1</Data><Data Name='MessageTotal'>1</Data><Data Name='ScriptBlockText'># T1082_discovery.ps1
+
+
+
+Write-Output "Running system discovery technique (T1082)"
+
+
+
+Get-ComputerInfo | Out-Null
+
+
+
+Start-Sleep -Seconds 1
+
+
+
+</Data><Data Name='ScriptBlockId'>51a6eb14-356d-4110-a0d8-e9447caad257</Data><Data Name='Path'>C:\Users\Anagh\PurpleBox\attacks\T1082_discovery.ps1</Data></EventData></Event>
+

@@ -1,0 +1,13 @@
+Running simulated PowerShell technique (T1059)
+
+
+[*] Running Detection Script (T1059.001)...
+
+[!] Errors:
+Traceback (most recent call last):
+  File "C:\Users\Anagh\PurpleBox\detections\detect_T1059.py", line 1, in <module>
+    import win32evtlog
+ModuleNotFoundError: No module named 'win32evtlog'
+
+
+[*] Running PowerShell Simulation (T1082)...

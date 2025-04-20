@@ -1,0 +1,23 @@
+Running simulated PowerShell technique (T1059)
+
+
+[*] Running Detection Script (T1059.001)...
+[MATCH] Found Event ID 4104:
+<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-PowerShell' Guid='{a0c1853b-5c40-4b15-8766-3cf1c58f985a}'/><EventID>4104</EventID><Version>1</Version><Level>5</Level><Task>2</Task><Opcode>15</Opcode><Keywords>0x0</Keywords><TimeCreated SystemTime='2025-04-20T20:13:32.4729436Z'/><EventRecordID>1494</EventRecordID><Correlation ActivityID='{cd422042-b21d-0001-3901-43cd1db2db01}'/><Execution ProcessID='7140' ThreadID='7072'/><Channel>Microsoft-Windows-PowerShell/Operational</Channel><Computer>DESKTOP-AIJFHRO</Computer><Security UserID='S-1-5-21-3792401364-173843540-2363564901-1001'/></System><EventData><Data Name='MessageNumber'>1</Data><Data Name='MessageTotal'>1</Data><Data Name='ScriptBlockText'># T1059_powershell.ps1
+
+# Simulates basic PowerShell execution (MITRE ATT&amp;CK T1059.001)
+
+
+
+Write-Output "Running simulated PowerShell technique (T1059)"
+
+Get-Process | Out-Null
+
+Start-Sleep -Seconds 1
+
+</Data><Data Name='ScriptBlockId'>e28024d1-2c0d-4a54-a26c-5611beb3e546</Data><Data Name='Path'>C:\Users\Anagh\PurpleBox\attacks\T1059_powershell.ps1</Data></EventData></Event>
+
+[OK] Script Block Execution Detected.
+
+
+[*] Running PowerShell Simulation (T1082)...

@@ -1,0 +1,19 @@
+# Ignore virtual environment and cache
+
+venv/
+
+__pycache__/
+
+*.pyc
+
+
+
+# Ignore zip files
+
+*.zip
+# Ignore system files
+
+.DS_Store
+
+Thumbs.db
+

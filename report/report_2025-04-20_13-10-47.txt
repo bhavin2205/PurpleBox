@@ -1,0 +1,11 @@
+Running system discovery technique (T1082)
+
+
+[*] Running Detection Script (T1082)...
+
+[!] Errors:
+Traceback (most recent call last):
+  File "C:\Users\Anagh\PurpleBox\detections\detect_T1082.py", line 1, in <module>
+    import win32evtlog
+ModuleNotFoundError: No module named 'win32evtlog'
+
