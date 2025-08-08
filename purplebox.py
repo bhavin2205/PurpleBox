@@ -66,7 +66,12 @@ def main():
         print("4. Simulate T1082 - System Discovery")
         print("5. Detect T1082")
         print("6. Run Config Automation")
-        print("7. Exit")
+        print("7. Simulate Recon Activity (T1595)")
+        print("8. Detect Recon Activity (T1595)")
+        print("9. Simulate Enumeration Activity (T1046)")
+        print("10. Detect Enumeration Activity (T1046)")
+
+        print("100. Exit")
 
         choice = input("Select an option: ")
 
@@ -84,6 +89,15 @@ def main():
         elif choice == '6':
             run_from_config()
         elif choice == '7':
+                subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-File", "attacks/T1595_recon.ps1"])
+        elif choice == '8':
+                subprocess.run([sys.executable, "detections/detect_T1595.py"])
+        elif choice == '9':
+                subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-File", "attacks/T1046_enum.ps1"])
+        elif choice == '10':
+                 subprocess.run([sys.executable, "detections/detect_T1046.py"])
+
+        elif choice == '100':
             print("Exiting PurpleBox.")
             break
         else:

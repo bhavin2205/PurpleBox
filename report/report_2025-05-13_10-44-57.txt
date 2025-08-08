@@ -1,0 +1,2 @@
+Running system discovery technique (T1082)
+
